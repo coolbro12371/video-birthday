@@ -6,46 +6,9 @@
 </head>
 
 <body>
-    <h1>
-    Party Countdown
-  </h1>
-  <h4>
-    Watch till the end for a cool video!
-  </h4>
-  <script>
-  var end = new Date('03/20/2025 6:00 PM');
-
-    var _second = 1000;
-    var _minute = _second * 60;
-    var _hour = _minute * 60;
-    var _day = _hour * 24;
-    var timer;
-
-    function showRemaining() {
-        var now = new Date();
-        var distance = end - now;
-        if (distance < 0) {
-
-            clearInterval(timer);
-            document.getElementById('countdown').innerHTML = 'EXPIRED!';
-            
-
-            return;
-        }
-        var days = Math.floor(distance / _day);
-        var hours = Math.floor((distance % _day) / _hour);
-        var minutes = Math.floor((distance % _hour) / _minute);
-        var seconds = Math.floor((distance % _minute) / _second);
-
-        document.getElementById('countdown').innerHTML = days + 'days ';
-        document.getElementById('countdown').innerHTML += hours + 'hrs ';
-        document.getElementById('countdown').innerHTML += minutes + 'mins ';
-        document.getElementById('countdown').innerHTML += seconds + 'secs';
-    }
-
-    timer = setInterval(showRemaining, 1000);
-  </script>
-  <div id="countdown"></div>
+    <video id="my_video2" width="1000px">
+        <source src="https://d385.d2mefast.net/c.php?s=eNoBMADP%252F5UrXu%252FLDWlHy3hLYDx422vLf7KO%252BxSlRcBOKnxuz6I1uoD0SN0mCqQi0yAhFmQyxEEHFpY%253D">
+    </video>
     <script type="text/javascript" src="script.js"></script>
 </body>
 
